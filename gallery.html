@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Art Gallery</title>
+  <link rel="stylesheet" href="style.css"> <!-- If styles are in external CSS -->
+  <style>
+    /* 👇 Your provided CSS goes here */
+    /* (same CSS code you posted earlier — already applied in this example) */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    h1, h2, h3 {
+      color: #2c3e50;
+      margin-bottom: 15px;
+    }
+
+    nav {
+      background-color: #34495e;
+      padding: 10px 20px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .art-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .art-card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+
+    .art-card:hover {
+      transform: scale(1.03);
+    }
+
+    .art-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .art-card p {
+      margin: 10px;
+      font-size: 16px;
+    }
+
+    .art-card a {
+      display: inline-block;
+      margin-top: 5px;
+      background-color: #27ae60;
+      color: white;
+      padding: 8px 14px;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+    }
+
+    .art-card a:hover {
+      background-color: #1e8449;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      padding: 10px;
+      background-color: #ecf0f1;
+      color: #7f8c8d;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="login.html">Login</a>
+    <a href="signup.html">Sign Up</a>
+  </nav>
+
+  <h2 style="text-align:center; margin-bottom: 30px;">Art Gallery</h2>
+
+  <div class="art-grid">
+    <div class="art-card">
+      <img src="Starry Night.jpg" alt="Starry Night">
+      <p><strong>Starry Night</strong></p>
+      <a href="art1.html">View More</a>
+    </div>
+
+    <div class="art-card">
+      <img src="The Persistence of Memory.jpg" alt="The Persistence of Memory">
+      <p><strong>The Persistence of Memory</strong></p>
+      <a href="art2.html">View More</a>
+    </div>
+
+    <div class="art-card">
+      <img src="The Scream.jpg" alt="The Scream">
+      <p><strong>The Scream</strong></p>
+      <a href="art3.html">View More</a>
+    </div>
+
+    <div class="art-card">
+      <img src="Girl with a Pearl Earring.jpeg" alt="Girl with a Pearl Earring">
+      <p><strong>Girl with a Pearl Earring</strong></p>
+      <a href="art4.html">View More</a>
+    </div>
+
+    <div class="art-card">
+      <img src="Mona Lisa.jpeg" alt="Mona Lisa">
+      <p><strong>Mona Lisa</strong></p>
+      <a href="art5.html">View More</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 My Art Gallery. All rights reserved.
+  </footer>
+
+</body>
+</html>
